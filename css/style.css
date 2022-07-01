@@ -1,0 +1,63 @@
+/* UNIVERSAL STYLES */ 
+
+html {
+    font-size: 16px;
+    text-align: center;
+    background-color: rgb(118, 171, 118);
+    font-family: 'Palatino';
+}
+
+img {
+    object-fit: contain;
+    width: 150px;
+}
+
+
+a {
+    color: rgb(9, 59, 9);
+    text-decoration: none;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+/* NAV BAR */
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    
+}
+
+.logo {
+    padding: 10px 0px 10px 20px ;
+}
+
+.nav-menu {
+    color: gray;
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    font-size: 1.5rem;
+    
+}
+
+/* HAEDER */
+
+/* ABOUT */
+
+/* PRODUCTS */
+
+/* TEAM */
+
+/* FOOTER */
+
