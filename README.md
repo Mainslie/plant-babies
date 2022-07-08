@@ -14,7 +14,7 @@ This project was part of my Codecadmy: Front-End Engineer path, aiming to streng
 
 My site was inspired by my personal garden. I chose to design it with natural colors that showcase the beauty and legacy of plants.
 
-To do so, I chose greens and whites, as well as a spalsh of orange as an accent color, as my color pallet. 
+To do so, I chose greens and whites as my color pallet, as well as a spalsh of orange as an accent color. 
 
 <img src="images/color-pallet.png">
 
