@@ -8,6 +8,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="nav" class="nav">
@@ -15,19 +19,19 @@
             <div class="nav-menu">
                 <a href="#about">About</a>
                 <a href="#products">Products</a>
-                <a href="#team">Team</a>
+                <a href="#team-section">Team</a>
                 <a href="#footer">Contact</a>
             </div>
         </div>
         <div id="header" class="header">
-            <div class="magic">
+            <div class="back-spalsh-header">
                     <h1 class="headline">Plant Babies</h1>
-                    <p>An adoption site for lonley humans seeking plant baby companionship</p>
+                    <p>An adoption site for lonley humans seeking plant companionship</p>
             </div>
         </div>
         <div id="about" class="about">
             <h2>About Us</h2>
-            <p>Our team here in Plant Babies recognizes the difficulty of living in todays isolated society. 
+            <p>Our team here at Plant Babies recognizes the difficulty of living in todays isolated society. 
                 Humans are living a Isolated live from eachother but also from nature. 
                 For that exact purpuse we have decided to create an 
                 oppertunity for humans to find companionship by adopting planet babies. 
@@ -36,49 +40,78 @@
                 happiness and color into your life.
             </p>
         </div>
-        <div id="products">
-            <h2>Up For Adoption</h2>
-            <div id="plants">
+        <div id="products" class="products">
+            <h2>Our Products</h2>
+            <div class="plants">
                 <div>
                     <img src="/images/ferns.webp" alt="fern scketchs">
-                    <h3>Ferns</h3> 
+                    <span>Ferns</span>
                 </div>
                 <div>
                     <img src="/images/trees.jpeg" alt="Tree scketchs">
-                    <h3>Trees</h3> 
-                </div>
-                <div>
-                    <img src="/images/succulents.jpg" alt="Succulent scketchs">
-                    <h3>Succulents</h3> 
-                </div>
-                <div>
-                    <img src="/images/flowers.jpeg" alt="Flower scketchs">
-                    <h3>Flowers</h3> 
+                    <span>Trees</span>
                 </div>
                 <div>
                     <img src="/images/climbers.jpeg" alt="Climber plant scketchs">
-                    <h3>Climbers & Creepers</h3> 
+                    <span>Climbers</span>
+                </div>
+                <div>
+                    <img src="/images/succulents.jpg" alt="Succulent scketchs">
+                    <span>Succulents</span>
+                </div>
+                <div>
+                    <img src="/images/flowers.jpeg" alt="Flower scketchs">
+                    <span>Flowers</span>
                 </div>
             </div>
         </div>
-        <div id="team">
+        <div id="team-section" class="team-section">
             <h2>Our Proud Members</h2>
-            <h3>Steph</h3>
-            <p>Out lead advertising expert. Makes sure you and more like you can find</p>
-            <h3>Ash</h3>
-            <p>Our plant expert. Reablitates and takes care of plant babies</p>
-            <h3>Sam</h3>
-            <p>Our sales & services expert. Makes sure  adoption proccess is easy and accesible</p>
+            <div class="team-members">
+                <div>
+                    <img src="/images/steph.png" alt="Sketch of team member Steph">
+                    <h3>Steph</h3>
+                    <p>Our lead advertising expert.<br> Makes sure you and more like you can find</p>
+                </div>
+                <div>
+                    <img src="/images/sam.png" alt="Sketch of team member Sam">
+                    <h3>Sam</h3>
+                    <p>Our sales & services expert.<br> Makes sure  adoption proccess is easy and accesible</p>
+                </div>
+                <div>
+                    <img src="/images/ash.png" alt="Sketch of team member Ash">
+                    <h3>Ash</h3>
+                    <p>Our plant expert.<br> Reablitates and takes care of plant babies</p>
+                </div>
+            </div>  
         </div>
-        <div id="footer">
-            <div>
-                <h1> contact details</h1>
+        <div id="footer" class="footer">
+            <div class="contact-details">
+                <h2> contact details</h2>
                 <p> 
-                    Email: plantbabies@adoptions.com
-                    Phone: 443-PLA-NTED
-                    Address: 22 slow rd, NY 88100
+                    Email: plantbabies@adoptions.com <br> <br>
+                    Phone: 443-PLA-NTED <br><br>
+                    Address: 22 slow rd, NY 88100 <br> <br>
                     P.O. BOX: 55498 
-                </p>   
+                </p> 
+            </div>  
+            <div class="form-container">
+                <form class="form">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your Email..">
+
+                    <label for="subject">Subject of inquiery</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </div>
     </body>
 </html>

@@ -1,12 +1,37 @@
 /* UNIVERSAL STYLES */ 
+:root {
+    --palette-white: white;
+    --palette-green: green;
+    --default-padding: 20px;
+}
 
 html {
     font-size: 16px;
     text-align: center;
-    background-color: rgb(118, 171, 118);
-    font-family: 'Roboto';
-    box-sizing: content-box;
+    background-color: rgb(255, 253, 250);
+    font-family: 'Gentium';
+    box-sizing: border-box;
     color: rgb(26, 50, 20);
+}
+
+body {
+    margin: 0;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+span {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;;
 }
 
 img {
@@ -14,43 +39,55 @@ img {
     width: 150px;
 }
 
-a {
+a , input[type=submit] {
     color: rgb(9, 59, 9);
     text-decoration: none;
+    background-color: rgba(166, 190, 164, 0.378);
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
 }
 
 a:visited {
-    color: rgb(119, 116, 120);
+    color: rgb(255, 123, 0);;
 }
 
-a:hover {
+a:hover , input[type=submit]:hover{
     text-decoration: underline;
     color: rgb(26, 50, 20);
+    cursor: pointer;
 }
+
+
 
 /* NAV BAR */
 
-#nav {
+.nav-menu {
+    display: none;
+    color: rgb(247, 143, 46);
+    justify-content: space-around;
+    width: 500px;
+    font-size: 1.5rem;
+}
+
+.nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: rgb(255, 253, 250);
     align-items: center;
-    
+}
+
+@media (min-width: 1024px) {
+    .nav-menu {
+        display: flex;
+    }  
 }
 
 .logo {
     padding: 10px 0px 10px 20px ;
 }
 
-.nav-menu {
-    color: gray;
-    display: flex;
-    justify-content: space-around;
-    width: 500px;
-    font-size: 1.5rem;
-    
-}
+
 
 /* HAEDER */
 .header{
@@ -61,38 +98,186 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 1.5rem;
-}
-
-.header::before {    
-    content: "";
     background-image: url('/images/header-background2.jpeg');
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.5;
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
 }
 
-.magic {
+.back-spalsh-header {
     position: relative;
     padding: 1rem;
     font-size: 2rem;
-    background-color:rgba(250, 241, 224, 0.533);
-    color: rgb(26, 50, 20);
-    text-shadow:1px 1px rgb(255, 255, 255);
+    background-color:rgba(252, 255, 252, 0.7);
+    color: rgb(23, 46, 7);
+    text-shadow:1px 1px rgba(108, 132, 106, 0.964);
 }
+
+
 
 /* ABOUT */
 .about {
-    background-color:rgba(250, 241, 224, 0.533);
+    background-color:rgb(255, 253, 250);
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 50px;
+}
+
+@media (min-width: 1024px) {
+    .about {
+        flex-direction: row;
+        padding: 20px;
+    }
+}
+
+
+.about h2 {
+    flex: 1;
+    text-align: center;
+    color: rgb(255, 161, 73);
+    font-family: 'Montserrat';
+    letter-spacing: 0.4rem;
+}
+
+.about p {
+    flex: 1;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+    text-align: start;
+}
+
+
+
+
+/* PRODUCTS */
+.products {
+    background-color: rgba(47, 72, 47, 0.167);
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
-/* PRODUCTS */
 
+.plants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    background-color: rgba(47, 72, 47, 0.433);
+}
+
+@media (min-width: 1500px) {
+    .plants div {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.plants div {
+    background-color: rgba(39, 66, 39, 0.348);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.plants img {
+    width: 250px;
+    height: 250px;
+    padding: var(--default-padding)
+}
+.plants span {
+    color: rgb(251, 251, 251);
+    background-color: rgba(47, 72, 47, 0.528);
+}
+
+.plants span:hover {
+    color: rgb(255, 179, 0);
+}
 /* TEAM */
 
+.team-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 1500px) {
+    .team-members {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.team-members {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.team-members div {
+    background-color: rgba(61, 94, 51, 0.216);
+    padding: 20px;
+    border-width: 30px;
+    width: 300px;
+    margin: 20px;
+}
+
+.team-members h3 {
+color: rgba(242, 146, 12, 0.727);
+}
+
+.team-members p {
+    background-color: rgba(61, 94, 51, 0.701);
+    padding: 10px;
+    color: aliceblue;
+    letter-spacing: 0.1rem;
+}
+
+
+
 /* FOOTER */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(61, 94, 51, 0.701);
+    color: aliceblue;
+    align-items: center;
+    width: 100%;
+}
+
+@media (min-width: 1500px) {
+    .footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+.contact-details {
+    min-width: 500px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.221)
+}
+
+input[type=text], textarea {
+    width: 95%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+
+.form {
+    width: 500px;
+    margin: 80px;
+}
 
